@@ -1,0 +1,20 @@
+﻿<Window x:Class="Magic_8_Ball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Magic_8_Ball"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="211,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" TextAlignment="Center" FontSize="36" FontFamily="Arial Black" FontWeight="Bold" TextDecorations="Underline"><Run Language="sv-se" Text="MAGIC 8 BALL"/></TextBlock>
+        <TextBox x:Name="qBoxTxt" HorizontalAlignment="Center" Margin="0,65,0,0" Text="Ask your question here..." TextWrapping="Wrap" VerticalAlignment="Top" Width="672" Height="100" FontSize="20" FontFamily="Arial" FontWeight="Bold" GotFocus="qBoxTxt_GotFocus"/>
+        <TextBlock x:Name="magicAnswerTxt" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="672" FontFamily="Arial" FontSize="20" FontWeight="Bold" TextAlignment="Center"/>
+        <Button x:Name="askBtn" Content="ASK" HorizontalAlignment="Left" Height="60" Margin="56,336,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" Click="askBtn_Click"/>
+        <Button x:Name="clrBtn" Content="CLEAR" HorizontalAlignment="Left" Height="60" Margin="225,336,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" Click="clrBtn_Click"/>
+        <Button x:Name="agnBtn" Content="Play Again" HorizontalAlignment="Left" Height="60" Margin="400,336,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" Click="agnBtn_Click"/>
+        <Button x:Name="quitBtn" Content="QUIT" HorizontalAlignment="Left" Height="60" Margin="586,336,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold" Click="quitBtn_Click"/>
+        <TextBlock x:Name="thinkBox" HorizontalAlignment="Center" Height="26" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextAlignment="Center" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
